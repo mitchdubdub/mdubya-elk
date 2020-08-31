@@ -1,4 +1,11 @@
 # elk
+#
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include elk
 class elk {
   class {'logstash':}
   logstash::plugin {'logstash-input-beats':}
@@ -18,4 +25,7 @@ class elk {
       'server.host' => '0.0.0.0'
     }
   }
+
+
+  include elk::filebeat
 }
