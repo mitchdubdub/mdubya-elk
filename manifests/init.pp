@@ -1,3 +1,4 @@
+# elk
 class elk {
   class {'logstash':}
   logstash::plugin {'logstash-input-beats':}
